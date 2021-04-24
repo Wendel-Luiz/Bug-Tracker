@@ -5,12 +5,13 @@ import Button from '../../Atoms/Button';
 import Bold from '../../Atoms/Bold/style';
 import Title from '../../Atoms/Title';
 import Text from '../../Atoms/Text';
-import Container from './style';
+import FlexContainer from '../../Atoms/FlexContainer';
 
 function Form(){
     return(
-        <Container
-            color = 'white'
+        <FlexContainer
+            type = 'card'
+            ctnWidth = '400px'
         >
             <Title type ='main'><Bold>Cadastre-se</Bold></Title>
             <Input 
@@ -36,9 +37,22 @@ function Form(){
                 Ao concluir o cadastro você aceita os nossos <Bold>Termos e condições</Bold>
             </Text>
             <Button>Cadastrar</Button>
-            <OAuth />
+            <Text
+                align  = 'center'
+            >
+                Você pode também se <Bold>cadastrar</Bold> usando uma de suas contas abaixo!
+            </Text>
 
-        </Container>
+            <FlexContainer
+                flexDirection = 'column'
+                ctnWidth = '100%'
+            >
+                <OAuth type='github'/>
+                <OAuth type='facebook'/>
+                <OAuth type='google'/>
+            </FlexContainer>
+
+        </FlexContainer>
     )
 }
 
