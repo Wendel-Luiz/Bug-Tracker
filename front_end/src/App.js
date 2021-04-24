@@ -2,15 +2,14 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 
-import OAuth from './Atomic/Atoms/OAuth';
+import Form from './Atomic/Organisms/Form';
 
 function App() {
   return (
-    <Router>
-      <OAuth type="facebook"/>
+    <Router> 
+      <Form />
       <Switch>
         <Route path="/home">
           <Home />

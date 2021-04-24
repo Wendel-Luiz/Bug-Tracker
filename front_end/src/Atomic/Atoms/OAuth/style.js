@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const OAuthLink = styled(Link)`
     text-decoration: none;
     color: white;
-    font-weight: bold;
+    font-weight: 500;
     padding-left: .5rem;
 `
 
