@@ -2,7 +2,7 @@ import React from 'react';
 import {OAuthLink, OAuthContainer} from './style';
 import {FaFacebookF , FaGithub, FaGoogle} from 'react-icons/fa';
 
-export default (props) => {
+function OAuth(props){
     const data = {
         text: '',
         icon: '',
@@ -42,3 +42,11 @@ export default (props) => {
         </OAuthContainer>
     )
 }
+
+OAuth.defaultProps = {
+    cntWidth: 'auto',
+}
+
+export {
+    OAuth,
+};

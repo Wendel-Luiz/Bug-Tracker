@@ -6,7 +6,7 @@ import {
     TitleSubSubStyle
 } from './style';
 
-export default (props) => {
+function Title(props){
     switch(props.type){
         case 'main':
             return <TitleMainStyle>{props.children}</TitleMainStyle>
@@ -21,3 +21,9 @@ export default (props) => {
             return null;
     }
 }
+
+Title.defaultProps = {
+    color: 'black',
+}
+
+export default Title;

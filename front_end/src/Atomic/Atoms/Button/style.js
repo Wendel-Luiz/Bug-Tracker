@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 const ButtonStyle = styled.button`
     color: white;
-    background-color: #121849;
-    border: 2px solid #121849;
+    background-color: ${props => props.color};
+    border: 2px solid ${props => props.color};
     border-radius: 0.3rem;
     padding: 0.5rem;
     cursor: pointer;

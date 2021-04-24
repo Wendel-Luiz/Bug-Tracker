@@ -1,9 +1,20 @@
 import React from 'react';
 import ButtonStyle from './style';
 
-export default (props) => (
-    <ButtonStyle>
-        {props.children}
-    </ButtonStyle>
-)
+function Button (props){
+    return(
+        <ButtonStyle
+            color = {props.color}
+        >
+            {props.children}
+        </ButtonStyle>
+    )
+ 
+}
+
+Button.defaultProps = {
+    color : '#121849'
+}
+
+export default Button;
 

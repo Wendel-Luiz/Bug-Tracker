@@ -15,7 +15,7 @@ const OAuthContainer = styled.div`
 
     padding: 0.5rem;
 
-    width:              ${props => props.cntWidht   || "auto"};
+    width:              ${props => props.cntWidht};
     background-color:   ${props => props.color};
     
     border-radius: 0.15rem;
