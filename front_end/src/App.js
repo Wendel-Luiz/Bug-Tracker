@@ -4,12 +4,12 @@ import {
   Route,
 } from "react-router-dom";
 
-import Form from './Atomic/Organisms/Form';
+import SideBar from './Atomic/Organisms/SignIn_sideBar';
 
 function App() {
   return (
     <Router> 
-      <Form />
+      <SideBar />
       <Switch>
         <Route path="/home">
           <Home />

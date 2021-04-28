@@ -19,7 +19,7 @@ Text.defaultProps = {
     color:      'Black',
     fontSize:   '1rem',
     spacing:    'normal',
-    margin:     '1em 0 1em 0',
+    margin:     '.5em 0 .5em 0',
     align:      'left'
 }
 

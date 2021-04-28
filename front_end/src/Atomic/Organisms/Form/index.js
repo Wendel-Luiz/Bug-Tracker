@@ -1,15 +1,15 @@
 import React from 'react';
 import Input from '../../Molecules/Input';
-import OAuth from '../../Molecules/OAuth';
+import OAuthMolecule from '../../Molecules/OAuthMolecule';
 import Button from '../../Atoms/Button';
 import Bold from '../../Atoms/Bold/style';
 import Title from '../../Atoms/Title';
 import Text from '../../Atoms/Text';
-import FlexContainer from '../../Atoms/FlexContainer';
+import Container from './style';
 
 function Form(){
     return(
-        <FlexContainer
+        <Container
             type = 'card'
             ctnWidth = '400px'
         >
@@ -42,17 +42,8 @@ function Form(){
             >
                 Você pode também se <Bold>cadastrar</Bold> usando uma de suas contas abaixo!
             </Text>
-
-            <FlexContainer
-                flexDirection = 'column'
-                ctnWidth = '100%'
-            >
-                <OAuth type='github'/>
-                <OAuth type='facebook'/>
-                <OAuth type='google'/>
-            </FlexContainer>
-
-        </FlexContainer>
+            <OAuthMolecule />
+        </Container>
     )
 }
 

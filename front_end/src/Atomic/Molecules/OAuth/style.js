@@ -7,4 +7,16 @@ const OAuthLink = styled(Link)`
     font-weight: 500;
     padding-left: .5rem;
 `
-export default OAuthLink;
+
+const Container = styled.div`
+    display:flex;
+    justify-content:center;
+    padding:.25rem;
+    border-radius:5px;
+    background-color: ${props => props.color}
+`;
+
+export {
+    OAuthLink,
+    Container
+};

@@ -1,6 +1,5 @@
 import React from 'react';
-import OAuthLink from './style';
-import FlexContainer from '../../Atoms/FlexContainer';
+import { OAuthLink, Container } from './style';
 import {FaFacebookF , FaGithub, FaGoogle} from 'react-icons/fa';
 
 function OAuth(props){
@@ -31,15 +30,14 @@ function OAuth(props){
     }    
 
     return(
-        <FlexContainer 
-            type='oAuth'
-            backgroundColor= {data.color}
+        <Container 
+            color= {data.color}
         >
             <data.icon color="white" fontSize="1rem"/>
             <OAuthLink>
                 {data.text}
             </OAuthLink>
-        </FlexContainer>
+        </Container>
     )
 }
 

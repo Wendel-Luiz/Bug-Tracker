@@ -1,11 +1,11 @@
 import {Input as InputAtom} from '../../Atoms/Input';
 import Text from '../../Atoms/Text';
-import FlexContainer from '../../Atoms/FlexContainer';
+import Container from './style';
 import Bold from '../../Atoms/Bold/style'
 
 function Input(props){
     return(
-        <FlexContainer>
+        <Container>
             <InputAtom>{props.name}</InputAtom>
             <Text
                 color ="red"
@@ -14,7 +14,7 @@ function Input(props){
             >
                 <Bold>{props.error}</Bold>
             </Text>
-        </FlexContainer>
+        </Container>
     )
 }
 
